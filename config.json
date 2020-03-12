@@ -1,0 +1,10 @@
+{
+    "port": ":8011",
+    "sql": {
+      "user": "myuser",
+      "password": "mypassword",
+      "host": "127.0.0.1",
+      "port": "3306",
+      "dbname": "mydbname"
+    }
+}

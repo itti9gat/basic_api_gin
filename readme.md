@@ -1,4 +1,4 @@
-# Getting started
+# Basic API with Gin
 
 ## Install the Golang
 ```

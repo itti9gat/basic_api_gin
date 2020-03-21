@@ -1,6 +1,6 @@
 package handle
 
-import "iiujapp.tech/susaday/repo"
+import "iiujapp.tech/basic-api-gin/repo"
 
 // Handler struct
 type Handler struct {

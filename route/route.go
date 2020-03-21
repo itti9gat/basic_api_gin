@@ -3,7 +3,7 @@ package route
 import (
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
-	"iiujapp.tech/susaday/handle"
+	"iiujapp.tech/basic-api-gin/handle"
 )
 
 // NewRoute main route

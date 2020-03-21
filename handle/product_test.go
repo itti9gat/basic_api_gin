@@ -10,9 +10,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/golang/mock/gomock"
 	"gopkg.in/go-playground/assert.v1"
-	"iiujapp.tech/susaday/handle"
-	"iiujapp.tech/susaday/model"
-	mock_repo "iiujapp.tech/susaday/repo/mock"
+	"iiujapp.tech/basic-api-gin/handle"
+	"iiujapp.tech/basic-api-gin/model"
+	mock_repo "iiujapp.tech/basic-api-gin/repo/mock"
 )
 
 func TestProduct(t *testing.T) {

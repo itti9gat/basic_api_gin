@@ -4,7 +4,7 @@ import (
 	"database/sql"
 
 	_ "github.com/go-sql-driver/mysql"
-	"iiujapp.tech/susaday/model"
+	"iiujapp.tech/basic-api-gin/model"
 )
 
 // ProductRepository struct
@@ -20,7 +20,7 @@ func NewProduct(db *sql.DB) ProductRepository {
 }
 
 // FindProduct function
-func (repo ProductRepository) FindProduct(proID string) (model.Product, error) {
+func (repo *ProductRepository) FindProduct(proID string) (model.Product, error) {
 	stmt, err := repo.db.Prepare(`
 				SELECT 
 					id,

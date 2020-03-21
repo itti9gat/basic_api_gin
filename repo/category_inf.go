@@ -3,7 +3,7 @@
 package repo
 
 import (
-	"iiujapp.tech/susaday/model"
+	"iiujapp.tech/basic-api-gin/model"
 )
 
 // CategoryINF interface

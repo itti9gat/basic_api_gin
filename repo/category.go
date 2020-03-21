@@ -4,7 +4,7 @@ import (
 	"database/sql"
 
 	_ "github.com/go-sql-driver/mysql"
-	"iiujapp.tech/susaday/model"
+	"iiujapp.tech/basic-api-gin/model"
 )
 
 // CategoryRepository struct
@@ -20,7 +20,7 @@ func NewCategory(db *sql.DB) CategoryRepository {
 }
 
 // FindCategory function
-func (repo CategoryRepository) FindCategory(cateID string) (model.Category, error) {
+func (repo *CategoryRepository) FindCategory(cateID string) (model.Category, error) {
 	stmt, err := repo.db.Prepare(`
 				SELECT 
 					id,

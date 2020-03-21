@@ -8,9 +8,9 @@ import (
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/spf13/viper"
-	"iiujapp.tech/susaday/handle"
-	"iiujapp.tech/susaday/repo"
-	"iiujapp.tech/susaday/route"
+	"iiujapp.tech/basic-api-gin/handle"
+	"iiujapp.tech/basic-api-gin/repo"
+	"iiujapp.tech/basic-api-gin/route"
 )
 
 var (
@@ -53,7 +53,7 @@ func main() {
 	rp := repo.NewProduct(db)
 
 	r := gin.Default()
-	h := handle.NewHandler(rc, rp)
+	h := handle.NewHandler(&rc, &rp)
 	route.NewRoute(r, h)
 
 	log.Printf("Listening and serving HTTP on %s\n", cfg.Port)
